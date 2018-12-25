@@ -27,7 +27,7 @@ chrome_options = webdriver.ChromeOptions()
 prefs = {"profile.managed_default_content_settings.images": 2}
 chrome_options.add_experimental_option("prefs", prefs)
 browser=webdriver.Chrome(chrome_options=chrome_options)
-url_list=get_data_list('2011-11-09','2018-11-19')
+url_list=get_data_list('2011-11-09','2018-11-19','it')
 js="var q=document.documentElement.scrollTop=1000000000000000"
 textresult=[]
 num=len(textresult)
